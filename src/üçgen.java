@@ -1,22 +1,19 @@
-
-Taksimetre.java
 import java.util.Scanner;
-public class Taksimetre
-{
+public class kdv {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int km;
-        double perkm = 2.20, total = 10, min = 20;
-        System.out.print("Lütfen KM cinsinden giriniz");
-        km = input.nextInt();
-
-        total += (perkm * km);
-
-        total = total < 20 ? 20 : total;
-
-        System.out.print(total);
+Scanner input = new Scanner(System.in);
+double  tutar,kdvoran = 0.18,Kdvtutar, Kdvlitutarı;
+System.out.print("lütfen tutarı giriniz : " );
 
 
+
+tutar = input.nextDouble();
+        Kdvtutar = tutar * kdvoran;
+        Kdvlitutarı = tutar + Kdvtutar;
+System.out.println("Girdiginiz tutar : " + tutar);
+System.out.println("kdv oranı : "+ 0.18);
+System.out.println("Kdv tutarı :" + Kdvtutar);
+System.out.println("Kdvli Tutar  :"+ Kdvlitutarı);
 
 
     }
